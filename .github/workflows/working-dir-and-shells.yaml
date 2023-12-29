@@ -3,9 +3,13 @@ on: [push]
 defaults:
     run:
       shell: bash
+#     working-directory: /
 jobs:
     display-wd-info:
         runs-on: ubuntu-latest
+        defaults:
+          run:
+            working-directory: /home/runner
         steps:
             - name: Display Working Directory & List Files
               run: |

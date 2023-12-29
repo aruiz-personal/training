@@ -55,30 +55,3 @@ print(bool(""))
 
 print(bool({}))
 
-# Lists
-
-friends = ["Andres", "Thaly"]
-
-print(len(friends))
-
-friends.append("Jose")
-
-# Tuples
-
-tuple = ("1","2","3") # brackets are optional
-
-print(tuple)
-#You can not append but you can do:
-tuple2 = tuple + ("4",)
-
-print(tuple2)
-
-# Sets.. unordered, no repeated values/no duplicates.
-
-art_friends = {"Rolf","Anne"}
-
-science_friends = {"Ralph","Charly"}
-
-art_friends.add("Jose")
-
-science_friends.remove("Ralph")
