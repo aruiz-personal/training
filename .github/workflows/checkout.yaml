@@ -15,3 +15,5 @@ jobs:
                 git checkout main
             - name: List files after
               run: ls -a
+            - name: Show README.md
+              run: cat README.md
