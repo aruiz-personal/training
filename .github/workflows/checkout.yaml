@@ -2,6 +2,14 @@ name: Checkout
 on: [push]
 
 jobs:
+    checkout-action:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Checkout
+          uses: actions/checkout@v4.1.1
+        - name: List files
+          run: ls -a      
+
     checkout-and-display-files:
         runs-on: ubuntu-latest
         steps:
@@ -17,3 +25,4 @@ jobs:
               run: ls -a
             - name: Show README.md
               run: cat README.md
+    
