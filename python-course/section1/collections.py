@@ -67,3 +67,10 @@ total = sum(grades)
 length = len(grades)
 
 avg = total/length
+
+# Join list elements
+
+friends3 = ["Andres", "Jose", "Smith"]
+friends3_join = ", ".join(friends3)
+
+print(friends3_join)
