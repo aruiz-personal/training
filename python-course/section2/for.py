@@ -51,3 +51,23 @@ for status in cars:
         print("Skip")
         continue
     print(status)
+
+# else keyword with loops
+    
+for status in cars:
+    if status == "faulty":
+        print("Stop the production line.")
+        break
+else:
+    print("All cars build successfully.")
+
+# Finding primer numbers with for loops
+
+for n in range(2,10):
+  for x in range(2,n):
+    if(n%x == 0):
+      print(f"{n} equals {x} * {n//x}")
+      break
+    else:
+        print(f"{n} is prime")
+        
